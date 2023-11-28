@@ -1,0 +1,43 @@
+{% load static %}
+<div class="row">
+    <div class="nav__blook_ul">
+        <ul>
+            <li class="nav__item"><a class="nav__link  nav__link_activ" href="home">Домашняя</a></li>
+            <li class="nav__item"><a class="nav__link nav__link_activ" href="monitoring">Мониторинг</a></li>
+            <li class="nav__item"><a class="nav__link nav__link_activ" href="test">Тесты</a></li>
+            <li class="nav__item"><a class="nav__link nav__link_activ" href="help">Помощь</a></li>
+            {% if user.is_authenticated %}
+                <li class="nav__item"><a class="nav__link nav__link_activ" href="{% url 'profile' %}">{{user|title}}</a></li>
+                <li class="nav__item"><a class="nav__link nav__link_activ" href="{% url 'logout' %}">Выход</a></li>
+            {% else %}
+                <li class="nav__item"><a class="nav__link nav__link_activ" href="{% url 'login' %}">Вход</a></li>
+                <li class="nav__item"><a class="nav__link nav__link_activ" href="{% url 'register' %}">Регистрация</a></li>
+            {% endif %}
+
+            </ul>
+    </div>
+    <div class="nav_checkbox dropbtn" onclick="myFunction(this), myFunction2() ">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="dropdown">
+        <div id="myDropdown" class="dropdown-content">
+            <ul>
+                <li class="nav__item2 "><a class="nav__link nav__link_activ" href="index">Домашняя</a></li>
+                <li class="nav__item2 "><a class="nav__link nav__link_activ" href="monitoring">Мониторинг</a></li>
+                <li class="nav__item2 "><a class="nav__link nav__link_activ" href="test">Тесты</a></li>
+                <li class="nav__item2"><a class="nav__link nav__link_activ" href="help">Помощь</a></li>
+
+                {% if user.is_authenticated %}
+                    <li class="nav__item2"><a class="nav__link nav__link_activ" href="{% url 'profile' %}">{{user|title}}</a></li>
+                    <li class="nav__item2"><a class="nav__link nav__link_activ" href="{% url 'logout' %}">Выход</a></li>
+                {% else %}
+                    <li class="nav__item2"><a class="nav__link nav__link_activ" href="{% url 'login' %}">Вход</a></li>
+                    <li class="nav__item2"><a class="nav__link nav__link_activ" href="{% url 'register' %}">Регистрация</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+</div>

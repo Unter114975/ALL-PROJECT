@@ -1,0 +1,292 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #000000;
+}
+h1 {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 35px;
+line-height: 65px;
+text-align: center;
+color: #FFFAFA;
+
+}
+/*---  nav   ---------*/
+.nav{
+	width: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+.nav__blok1{	
+	text-align: left;
+    padding-top: 20px;
+}
+
+.nav__text1{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 29px;
+	line-height: 36px;
+	color: #000000;
+	font-weight: bolder;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	
+}
+
+.nav__blok2{
+text-align: right;
+padding-top: 25px;
+}
+
+.nav__ul{
+	margin-right: auto;
+	margin-bottom: 25px;
+	margin-left: 15px;
+}
+
+.nav__ul-li{
+	display: inline-block;
+	padding-left: 10px;
+	
+}
+
+.nav__li-a{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 27px;
+	color: #000000;
+}	
+
+/*---  header  ---------*/
+.header__blok1{
+
+	padding-top: 570px;
+	padding-bottom: 10px;
+	
+	background: url('../img/Home3-2.jpg');
+	/*width:100%;
+	height: 100%;
+	background-size: cover;*/
+}
+	
+.header__blok2{
+	padding-top: 570px;
+	padding-bottom: 10px;
+	background: url('../img/Home1-2.jpg');
+	/*width:100%;
+	height: 100%;
+	background-size: cover;*/
+}
+
+.header__blok1_sector1{
+	text-align: center;
+	margin-top: 16px;
+	margin-left: 60px;
+	margin-right: 60px;
+	
+}
+.header__blok1_text{
+
+	font-family: 'Inter';
+	/*font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 34px;*/
+	font-size: 20px;
+	text-align: center;
+	color: #FFF50B;
+	
+	
+}
+.header__blok1_tel{
+	padding-top: 50px;
+	font-family: 'Inter';
+	font-size: 20px;
+	text-align: center;
+	color:#bcbcbc;
+}
+.flip{
+	/*height: 200px;
+    background: #000;
+   display: none;*/
+}
+.panel1, .panel2, .panel3, .panel4, .panel5, .panel6 {
+	display: none;
+
+}
+/*-- meCompan */
+.meCompan__title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 29px;
+	line-height: 35px;
+	padding-top: 17px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	
+}
+.meCompany{
+
+}
+.meCompany__article{
+	margin-top: 30px;
+	margin-bottom: 50px;
+	font-family: 'Inter';
+	font-size: 16px;
+	line-height: 30px;
+}
+.meCompany__article-ul{
+   display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+	line-height: 20px;
+	
+}
+.meCompany__article-text1{
+	line-height: 20px;
+	
+}
+/*-- meWork */
+.calc__link{
+	color: #000000;
+	
+}
+.meWork{
+background: #373B4F;
+	
+}
+.meWork__title{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 29px;
+	line-height: 35px;
+	padding-top: 17px;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.meWork__blok1{
+ padding-bottom: 15px;
+	
+	
+}
+.meWork__blok2 {
+	/*padding-top: 10px;
+	text-align: center;*/
+	padding-bottom: 20px;
+}
+
+.meWork_blok2-title, .meWork_blok3-title{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: left;
+	color: #FFF50B;
+	
+}
+.meWork_a{
+	font-family: 'Inter';
+	font-style: normal;
+	font-size: 18px;
+	text-align: center;
+	color: #95D998;
+}
+.meWork__blok3{
+		text-align: center;
+		padding-bottom: 100px;
+	
+}
+/*-- meContact */
+.meContact{
+
+	
+}
+.meContact__title{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 29px;
+	line-height: 35px;
+	padding-top: 57px;
+	
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.meContact__blok1{
+	padding-bottom: 300px;
+	
+	
+}.meContact__button{
+
+ appearance: none;
+  border: 10;
+  border-radius: 5px;
+  background: #4676D7;
+  color: #fff;
+  padding: 18px 16px;
+  font-size: 16px;
+  width: 400px;
+  cursor: crosshair;
+	
+}
+.p_buttom{
+	padding-bottom: 10px;
+}
+.Adress__blok{
+	padding-top: 50px;
+	
+}
+.Adress{
+	font-size: 29px;
+	font-weight: 300;
+	text-align: left;
+}
+.Adress__p{
+	font-size: 16px;
+	font-weight: 300;
+	text-align: left;
+	line-height: 35px;
+	
+}
+/*-- footer */
+.footer{
+	background: #373B4F;
+	padding-bottom: 50px;
+}
+.footer__text{
+	padding-top: 40px;
+	text-align: right;
+	color: #ffffff;
+	font-size: 15px;
+	
+}
+
+
+
+
+
+.blok_top{
+	margin-top: -470px;
+}
+.blok_button{
+	margin-top: 70px;
+	
+}

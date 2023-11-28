@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>МагЭлектрик</title>
+		<link href="css/reset.css" rel="stylesheet"/>
+		<link href="css/setka.css" rel="stylesheet"/>
+		<link href="css/main.css" rel="stylesheet"/>
+		<link href="css/main_calc.css" rel="stylesheet"/>
+	</head>
+<body>
+<header>
+		<nav class="nav ramka" >
+			<div class="container">
+				<div class="row" > 
+					<div class="col-6 nav__blok1"   >
+						<a class="nav__text1">МагЭлектроник</a>
+					</div>
+					<div class="col-6 nav__blok2">
+						<ul class="nav__ul" >
+							<li class="nav__ul-li"><a class="nav__li-a" href="index.html">Главная</a></li>
+							<li class="nav__ul-li"><a class="nav__li-a" href="#meCompany">О компании</a></li>
+							<li class="nav__ul-li"><a class="nav__li-a" href="#meWork">Услуги</a></li>
+							<li class="nav__ul-li"><a class="nav__li-a" href="#meContact">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		
+</header>
+<main>
+			<div class="form1" id="#form1>
+				<div class="container">
+					<div class="row">
+						<p class="forma1__title1">Техническое обслуживание электрооборудования</p>
+				</div>
+			</div>
+
+
+
+		<section>
+			<div class="container ramka" >
+				<div class="col-12 ramka" >
+					<form>
+						<div class="form ramka">
+							<label for="type-direction">
+								
+								<p class="forma1__title2">Техническое обслуживание позволяет выявлять проблемы в работе до получения аварий. Переодическое тестирование и выявление слабых мест позволяет предвитеть возникновение проблем в работе оборудования.  </p>
+							</label>
+						</div >	
+						<div class="form ramka">
+							<div class="form-group col-md-12">
+						      <label for="range">Срок техподдержки <span class="rasstoyanie">1</span> <span>мес.</span></label>
+						      <input type="range" class="custom-range" min="1" max="12" step="1" id="range" value="6"/>
+						    </div>
+							
+						</div><br>
+						<div class="form ramka">
+							<select class="form-control" id="direction1">
+									<option value="1">Выбирите количество контроллеров</option>
+									<option value="2">Обслуживание до 3 контроллеров</option>
+									<option value="3">Обслуживание до 10 контроллеров</option>
+									<option value="4">Обслуживание до 50 контроллеров</option>
+							</select>
+						</div><br>
+						<div class="form ramka">
+							<select class="form-control" id="direction2">
+									<option value="1">Выбирите количество Out/Inp сигналов </option>
+									<option value="2">Обслуживание до 500 сигналов</option>
+									<option value="3">Обслуживание до 1000 сигналов</option>
+									<option value="4">Обслуживание до 5000 сигналов</option>
+									<option value="5">Обслуживание свыше 5000 сигналов</option>
+							</select>
+						</div>	<br>
+
+
+							<div class="form-group ">
+								<label for="total-price">Итоговая цена</label>
+								<input type="text" class="form-control" value="0" id="itog" />
+							</div>
+					</form>	
+			</div>
+			</div>
+		</section>
+		<div class="blok_button">
+			
+		</div>
+		
+	
+			<script>
+			var
+				direction1 = document.querySelector('#direction1'),
+				direction2 = document.querySelector('#direction2'),
+				range = document.querySelector('#range'),
+				rasstoyanie = document.querySelector('.rasstoyanie').innerHTML = 6,
+				itog = document.querySelector('#itog');
+				
+				var	prices = {
+				1:{1:1, 2:1, 3:1.5, 4:2},
+				2:{1:1, 2:1, 3:1.5, 4:2, 5:2.5},
+			};	
+				
+				
+				range.onchange = function(){
+				rasstoyanie = document.querySelector('.rasstoyanie').innerHTML = range.value;
+				console.log(range.value)
+				itog.value = range.value*10000;	
+				};	
+			
+				direction1.onchange = function(){
+				console.log(prices[1][direction1.value]);
+				itog.value = (range.value*10000)*(prices[1][direction1.value]);
+				};
+			
+				direction2.onchange = function(){
+				console.log(prices[2][direction2.value]);
+				itog.value = (range.value*10000)*(prices[2][direction2.value]);
+				};
+			
+			
+			//var sum = 1; /*prices[direction1]+prices[direction2]+;*/
+			//total-price.innerHTML = sum;
+			
+			//direction2.onchange = function{
+		   // itog.innerHTML = sum;
+			//}	
+				
+			</script>
+			<div class="container ramka" ><!-- Поиск и устранения неисправности -->
+					<form>
+						<div class="form ramka">
+							<select class="form-control" id="direction2_1">
+									<option value="1">Проверка через диагностические программы</option>
+									<option value="2">Выявление неистравности в работе оборудования</option>
+									<option value="3">Поиск неисправности в коде программы контроллера</option>
+							</select>
+						</div><br>
+						
+					
+						<div class="container col-5 form2 ramka">
+								<div class="col-md-3">
+									<input type="checkbox" id="Error1" class="custom-control-input">
+									<label class="custom-control-label" for="load">Проверка через диагностические программы</label>
+								</div>
+								<div class="col-md-3">
+									<input type="checkbox" id="Error2" class="custom-control-input">
+									<label class="custom-control-label" for="del">Поиск неисправности в коде программы контроллера</label>
+								</div>
+								<div class="col-md-3">
+									<input type="checkbox" id="Error3" class="custom-control-input">
+									<label class="custom-control-label" for="del">Внесение изменения в код программы контроллера</label>
+								</div>
+								<div class="col-md-3">
+									<input type="checkbox" id="Error4" class="custom-control-input">
+									<label class="custom-control-label" for="frag">Выявление неистравности в работе оборудования</label>
+								</div>
+								<div class="col-md-3">
+									<input type="checkbox" id="Error5" class="custom-control-input">
+									<label class="custom-control-label" for="frag">Замена неисправного оборудования</label>
+								</div>
+								<div class="col-md-3">
+									<input type="checkbox" id="Error6" class="custom-control-input">
+									<label class="custom-control-label" for="frag">Поиск обрыва кабельной трассы</label>
+								</div>
+								<div class="col-md-3">
+									<input type="checkbox" id="Error7" class="custom-control-input">
+									<label class="custom-control-label" for="frag">Замена кабеля</label>
+								</div>
+							</div>
+
+
+
+							<div class="form-group ">
+								<label for="total-price2">Итоговая цена</label>
+								<input type="text" class="form-control" value="0" id="itog2" />
+							</div>
+					</form>	
+			
+			</div>
+			
+			
+			
+			<div class="container ramka" ><!-- Внедрение дополнительных систем автоматизации -->
+					<form>
+						
+						<div class="form ramka">
+							<select class="form-control" id="direction2_1">
+									<option value="1">Проектирование расширения оборудования</option>
+									<option value="2">Подбор необходимого оборудования для существующего оборудовани</option>
+									<option value="3">Монтаж оборудования</option>
+									<option value="4">Выполнение пусконаладочных работ</option>
+							</select>
+							
+						</div><br>
+						
+						
+					
+					</form>
+			</div>
+			
+			
+			
+			
+</main>
+		
+		
+<!-- блок footer-->
+<footer class="footer ">
+	<div class="container">
+		<div class="footer__text" >
+			<p>МагЭлектроник 2022</p>
+		</div>
+	</div>
+</footer>		
+	</body>
+</html>

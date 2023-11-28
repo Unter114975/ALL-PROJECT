@@ -1,0 +1,132 @@
+{% extends "generic.html"%}
+
+{% block content %}
+{% load static %}
+
+<header class="header">
+
+
+    {% include 'include/header.html' %}
+
+</header>
+<section class="section__one">
+<div class="container">
+		<div class="row">
+			<div class="section__one_prog col-3 tc ">
+				<a href='https://ru.wikipedia.org/wiki/%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D0%B5%D1%82%D1%8C' class="section_one_text" title="Информационно вычислительная сеть — система, обеспечивающая обмен данными между вычислительными устройствами компьютерами, серверами, маршрутизаторами и другим оборудованием или программным обеспечением. Для передачи информации могут быть использованы различные среды передачи данных. " >Сети</a><!-- A -->
+			</div>
+			<div class="section__one_prog col-3 tc ">
+				<a href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82" class="section_one_text" title=" Информационно-коммуникационная сеть и всемирная система объединённых компьютерных сетей для хранения и передачи информации">Интернет</a><!-- B -->
+			</div>
+			<div class="section__one_prog col-3 tc">
+				<a href="https://ru.wikipedia.org/wiki/Ping" class="section_one_text" title="Утилита (ping) для проверки целостности и качества соединений в сетях на основе TCP/IP">Пинг</a><!-- C -->
+			</div>
+			<div class="section__one_prog col-3 tc">
+				<a href="https://ru.wikipedia.org/wiki/%D0%A5%D0%BE%D1%81%D1%82" class="section_one_text" title="Хост — любое устройство, предоставляющее сервисы формата «клиент-сервер» в режиме сервера по каким-либо интерфейсам и уникально определённое на этих интерфейсах. В более широком смысле под хостом могут понимать любой компьютер, подключённый к локальной или глобальной сети">Хост</a><!-- D -->
+			</div>
+		</div>
+
+</div>
+</section>
+<section id="section_two">
+	<div class="container section__two_out">
+		<div class="section__two_blook row">
+				<div class="section__two_title_left col-6">
+						<h2 class="section__two_left_title ">Программа непрерывного наблюдения <br> за состоянием связи с сетевым адресом</h2>
+						<p  class="select__two_left_text1">Процесс наблюдения за состоянием сети и работой оборудования в сети, позволяет наблюдать за состоянием в целом всего комплекса оборудования</p>
+						<!-- Использование сайта позволит анализировать состояния работы оборудованиеия не только в локальной сети но и глобальной сет интернета-->
+
+						<p class="select__two_left_text2">Мониторинг выполняет следующие функции:</p>
+						<ul>
+							<li><img class="section__two_left_imgList" src="img/boll2.png"><a class="select__two_left_list">Отслеживание сетевой активности</a></li>
+							<li><img class="section__two_left_imgList" src="img/boll2.png"><a class="select__two_left_list">Хранение истории</a></li>
+							<li><img class="section__two_left_imgList" src="img/boll2.png"><a class="select__two_left_list">Отчет скорости сетевого обмена</a></li>
+							<li><img class="section__two_left_imgList" src="img/boll2.png"><a class="select__two_left_list">Время передачи по сети</a></li>
+						</ul>
+
+						<div class="row">
+							<a style="	text-decoration: none;"  href="monitoring"><p class="select__two_left_text3">Перейти к началу работы</p></a>
+							<a style="	text-decoration: none;"  href="monitoring"><img class="select__two_left_title3_Arrow" src="{% static 'img/Arrow 3.png' %}"></a>
+						</div>
+
+				</div>
+					<div class="section__two_title_right col-6">
+						<img class="section__two_title_righ_img need-hide" src="{% static 'img/BukPro2.png' %}"/>
+					</div>
+				</div>
+	</div>
+</section>
+
+
+<section id="section_free">
+	<div class="container section_free_out">
+		<div class="section__free_righ row">
+
+
+				<div class="section__free_title_lef col-6 ">
+						<img class="section__free_title_righ_img need-hide" src="{% static 'img/MobilePro.png' %}"/>
+				</div>
+
+
+
+				<div class="section__three_title_right col-6">
+						<h2 class="section__free_righ_title">Возможности мобильно анализировать состояния работы оборудования</h2>
+						<p  class="select__free_righ_text1">Использование сайта позволит анализировать состояния работы оборудованиеия не только в локальной сети но и в глобальной сет интернета</p>
+
+						<div class="row select__two_left_blok_start">
+								<a style="	text-decoration: none;"  href="monitoring"><p class="select__two_left_text3">Перейти к началу работы</p></a>
+								<a style="	text-decoration: none;"  href="monitoring"><img class="select__two_left_title3_Arrow" src="{% static 'img/Arrow 3.png' %}"></a>
+						</div>
+				</div>
+		</div>
+	</div>
+</section>
+		<!--
+<section id="select__four">
+	<div class="select__four_blok ramka">
+		<div class="container ramka2">
+			<div class="select__four_functional">
+				<h2>Мониторинг сети является непрерывным процессом администратора, который связан с наблюдением за рабочей сетью</h2>
+				<p>Процесс выполняет следующие функции</p>
+			</div>
+
+			<div class="row justify__content__center  ramka3">
+				<div class="select__four_column1 ramka">
+							a
+				</div>
+				<div class="select__four_column2 ramka">
+							a
+				</div>
+			<div class="select__four_column3 ramka">
+							a
+				</div>
+			<div class="select__four_column4 ramka">
+							a
+				</div>
+		</div>
+	</div>
+	</div>
+</section>
+-->
+
+<section id="select__five">
+	<div class="container select__five_blok">
+		<div class="row">
+
+			<div class="select__five_blok1 col-6">
+					<p class="select__five_blok1_title">Вы можите провести тестовый мониторинг доступа по сети к любому удаленныму хосту</p>
+			</div>
+					<div class="select__five_blok2 col-6 ">
+						<div class="justify__content__center  ">
+							<a href="test"><input type="button" class="button2" value="Выполнить тестовую проверку"></a>
+						</div>
+				</div>
+
+		</div>
+	</div>
+</section>
+<header class="footer">
+{% include 'include/footer.html' %}
+</header>
+{% endblock %}
+

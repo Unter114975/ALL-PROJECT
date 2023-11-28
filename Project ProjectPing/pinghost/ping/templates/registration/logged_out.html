@@ -1,0 +1,20 @@
+{% extends "generic.html"%}
+
+{% block content %}
+{% load static %}
+{% include 'include/nav.html' %}
+
+<section>
+     <a href="{% url 'login'%}">Click here to login again.</a>
+</section>
+
+
+
+{% include 'include/footer.html' %}
+
+{% endblock %}
+
+
+
+
+

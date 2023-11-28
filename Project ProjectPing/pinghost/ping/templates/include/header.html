@@ -1,0 +1,54 @@
+{% load static %}
+
+<header class="header">
+<div class="headef__fon ">
+		<div class="container">
+		<nav class="nav">
+			<div class="row  justify__content__between nav__blook ">
+					<div class="col-auto">
+						<div class="">
+							<img class="nav__logo" src="{% static 'img/Logo2-benzin-preview5.png' %}" alt="Ping Host "/>
+						</div>
+					</div>
+					{% include 'include/menu.html' %}
+			</div>
+		</nav>
+	</div>
+
+
+
+	<div class="container-full ">
+		<div class="row">
+				<div class=" header__blook col-6 ">
+							<div class=" header__blook_leff">
+									<h1> МЫ ПОМОЖЕМ ВАМ УЗНАТЬ <br>СОСТОЯНИЕ СВЯЗИ<br>НА ДРУГОМ КОНЦЕ<br>ПЛАНЕТЫ</h1>
+									<img class="header__blook_leff_imgVector" src="{% static 'img/Vector.png' %}" />
+									<p class="header__blook_leff_text">Пинг узел - это аналитическая платформа проверки состояния связи с удаленными хостами, её использование позволит отслеживать состояние связи и сообщать о доступности адресов.</p>
+
+								<div class="header__blook_left_u ">
+										<div class ="header__blook_leff_title ">
+												<input type="button" class="button" onclick="location.href='monitoring'" value="Начать мониторить">
+										</div>
+
+											<div class="row header__blook_leff_title_bloc ">
+												<a style="	text-decoration: none;" href="test"><p class="header__blook_leff_title_demo">Перейти к тесту</p></a>
+												<a style="	text-decoration: none;" href="test"><img class="header__blook_leff_title_Arrow" src="{% static 'img/Arrow 1.png' %}"></a>
+											</div>
+
+								</div>
+
+
+							</div>
+					</div>
+					<div class=" header__blook col-6">
+							<div class=" header__blook_leff">
+								<img class="header__blook_raed_imgGr need-hide" src="{% static 'img/Group 19_1.png' %}" />
+								<img class="header__blook_raed_imgOv" src="{% static 'img/Shape@3x.png' %}" />
+							</div>
+					</div>
+
+
+		</div>
+	</div>
+</div>
+</header>

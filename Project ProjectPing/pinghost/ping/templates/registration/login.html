@@ -1,0 +1,41 @@
+ {% extends "generic.html" %}
+
+{% block content %}
+ <!--  <div class="error_text">
+            {% if form.errors %}
+                <p>Ваше имя пользователя и пароль не совпали. Пожалуйста, попробуйте снова.<p>
+            {% endif %}
+
+            {% if next %}
+                {% if user.is_authenticated %}
+                    <p>Ваша учетная запись не имеет доступа к этой странице. Чтобы продолжить, пожалуйста, войдите в систему с учетной записью, у которой есть доступ.</p>{% else %}
+                    <p>Пожалуйста, войдите в систему, чтобы увидеть эту страницу.</p>
+                {% endif %}
+            {% endif %}
+        </div>-->
+
+
+    <div class="login">
+
+            <div class="card-title nth-card-title">
+                 <p class="text_heading">ВОЙДИТЕ В СВОЙ АККАУНТ</p>
+            </div>
+            <div class="">
+                    <form  method="post" action="{% url 'login' %}">
+                       <div class="aut__inp nav__link  nav__link_activ text_input">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                        </div>
+                        <div class="d-grid gap-2 d-md-block mt-2">
+                            <button type="submit" class="btn btn-dark">Авторизоваться</button>
+                        </div>
+                </form>
+
+            </div>
+            <div class="login_int_resset">
+                <a class="login_int_resset_text" href="{% url 'password_reset' %}">Восстановление пароля</a>
+            </div>
+    </div>
+{% endblock %}
+
+
